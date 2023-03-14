@@ -1,0 +1,63 @@
+/* основний колір тексту (маленький) #434455; */
+/* другий колір тексту (заголовки)  #2E2F42;*/
+/* білий колір #FFFFFF;*/
+/* акцент #4D5AE5;*/
+/* другий колір фону #F4F4FD */
+/* колір фону футера #2E2F42 */
+
+/* Основний шрифт Roboto Medium */
+
+body {
+  background-color: #ffffff;
+  color: #434455;
+}
+
+.link {
+  text-decoration: none;
+}
+.style-logo {
+  color: #4d5ae5;
+}
+
+/*ХЕДЕР*/
+
+/* навігація сайту */
+
+.site-nav .link {
+  color: #2e2f42;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #4d5ae5;
+}
+
+/* адресса */
+.style-mail {
+  color: #434455;
+}
+.style-tel {
+  color: #434455;
+}
+
+/*МАЙН*/
+
+.section-title {
+  color: #2e2f42;
+}
+
+/* features */
+.feature-list .title {
+  color: #2e2f42;
+}
+
+/* Our Team */
+.team-list .title {
+  color: #2e2f42;
+}
+
+/* ПОРТФОЛІО */
+
+/* work examples */
+.work-examples .title {
+  color: #2e2f42;
+}
