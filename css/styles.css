@@ -10,13 +10,28 @@
 body {
   background-color: #ffffff;
   color: #434455;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
-.link {
+/* logo */
+
+.link,
+.link-logo {
   text-decoration: none;
 }
-.style-logo {
+.link-logo .accent {
   color: #4d5ae5;
+}
+.link-logo {
+  font-family: Raleway, sans-serif;
+  color: #2e2f42;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /*ХЕДЕР*/
@@ -25,6 +40,9 @@ body {
 
 .site-nav .link {
   color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -34,25 +52,69 @@ body {
 /* адресса */
 .style-mail {
   color: #434455;
+  font-style: normal;
 }
 .style-tel {
   color: #434455;
+  font-style: normal;
 }
 
 /*МАЙН*/
 
+/* Герой */
+
+.hero-title {
+  color: #ffffff;
+  background-color: #000000;
+
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.hero .button {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+/* Секції */
+
 .section-title {
   color: #2e2f42;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 /* features */
 .feature-list .title {
   color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.feature-list .text {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* Our Team */
 .team-list .title {
   color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.job-title {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* ПОРТФОЛІО */
@@ -60,4 +122,21 @@ body {
 /* work examples */
 .work-examples .title {
   color: #2e2f42;
+}
+.filters .button {
+  color: #4d5ae5;
+  background-color: #e7e9fc;
+}
+
+.filters .button:hover,
+.filters .button:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+/* ФУТЕР */
+
+.team-footer {
+  font-size: 16px;
+  line-height: 1.5;
 }
