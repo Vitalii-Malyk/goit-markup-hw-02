@@ -62,26 +62,21 @@ body {
 
 /* адресса */
 
-.addres-list .style-mail {
+.addres-list .contacts {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-color-text);
 }
-.addres-list .style-tel {
+.addres-list .contacts {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-color-text);
 }
 
-.addres-list .style-tel:hover,
-.addres-list .style-tel:focus {
-  color: #404bbf;
-}
-
-.addres-list .style-mail:hover,
-.addres-list .style-mail:focus {
+.addres-list .contacts:hover,
+.addres-list .contacts:focus {
   color: #404bbf;
 }
 
@@ -118,7 +113,6 @@ body {
 
 .hero .button:focus,
 .hero .button:hover {
-  color: #404bbf;
   background-color: #404bbf;
 }
 
@@ -236,12 +230,13 @@ body {
 .work-examples .title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--second-color-text);
 }
-.work-examples .filter-section {
+.link > .filter-sections {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
