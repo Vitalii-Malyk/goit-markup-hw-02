@@ -4,15 +4,25 @@
 /* акцент #4D5AE5;*/
 /* другий колір фону #F4F4FD */
 /* колір фону футера #2E2F42 */
-
 /* Основний шрифт Roboto Medium */
 
+:root {
+  --accent-color: #4d5ae5;
+  --main-color-text: #434455;
+  --second-color-text: #2e2f42;
+  --main-bg-color: #ffffff;
+  --second-bg-color: #f4f4fd;
+}
+
 body {
-  background-color: #ffffff;
-  color: #434455;
-  font-family: Montserrat, sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-color-text);
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   letter-spacing: 0.02em;
+}
+.list {
+  list-style: none;
 }
 
 /* logo */
@@ -22,11 +32,11 @@ body {
   text-decoration: none;
 }
 .link-logo .accent {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 .link-logo {
   font-family: Raleway, sans-serif;
-  color: #2e2f42;
+  color: var(--second-color-text);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -39,24 +49,37 @@ body {
 /* навігація сайту */
 
 .site-nav .link {
-  color: #2e2f42;
+  color: var(--second-color-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 /* адресса */
 .style-mail {
-  color: #434455;
+  color: var(--main-color-text);
   font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .style-tel {
-  color: #434455;
+  color: var(--main-color-text);
   font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.style-mail:hover,
+.style-mail:focus {
+  color: var(--accent-color);
+}
+.style-tel:hover,
+.style-tel:focus {
+  color: var(--accent-color);
 }
 
 /*МАЙН*/
@@ -64,8 +87,8 @@ body {
 /* Герой */
 
 .hero-title {
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--main-bg-color);
+  background-color: var(--second-color-text);
 
   font-size: 56px;
   line-height: 1.07;
@@ -84,8 +107,8 @@ body {
   align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
-  background-color: #4d5ae5;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
 }
 
 .hero .button:focus,
@@ -96,7 +119,7 @@ body {
 /* Секції */
 
 .section-title {
-  color: #2e2f42;
+  color: var(--second-color-text);
 
   font-weight: 700;
   font-size: 36px;
@@ -108,7 +131,7 @@ body {
 
 /* /* features */
 .feature-list .title {
-  color: #2e2f42;
+  color: var(--second-color-text);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -121,13 +144,19 @@ body {
 
 /* Our Team */
 .team-list .title {
-  color: #2e2f42;
+  color: var(--second-color-text);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
+.section.section-team {
+  background-color: var(--second-bg-color);
+}
+.team-list .cards {
+  background-color: var(--main-bg-color);
+}
 
-.job-title {
+. .job-title {
   font-size: 16px;
   line-height: 1.5;
 }
@@ -136,16 +165,16 @@ body {
 
 /* work examples */
 .work-examples .title {
-  color: #2e2f42;
+  color: var(--second-color-text);
 }
 .filters .button {
-  color: #4d5ae5;
+  color: var(--accent-color);
   background-color: #e7e9fc;
 }
 
 .filters .button:hover,
 .filters .button:focus {
-  color: #ffffff;
+  color: var(--main-bg-color) ff;
   background-color: #404bbf;
 }
 
@@ -154,4 +183,45 @@ body {
 .team-footer {
   font-size: 16px;
   line-height: 1.5;
+}
+footer .link-logo {
+  color: #f4f4fd;
+}
+.text-footer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f4fd;
+  background-color: var(--second-color-text);
+}
+.section-footer {
+  background-color: var(--second-color-text);
+}
+
+.filters .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background-color: #e7e9fc;
+  cursor: pointer;
+}
+
+.filters .button:hover,
+.filters .button:focus {
+  color: var(--main-bg-color);
+  background-color: #404bbf;
+}
+
+.work-examples .title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.work-examples .filter-section {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
