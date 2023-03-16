@@ -75,15 +75,13 @@ body {
   color: var(--main-color-text);
 }
 
-
-
-.style-mail .style-tel:hover,
-.style-mail .style-tel:focus {
+.addres-list .style-tel:hover,
+.addres-list .style-tel:focus {
   color: #404bbf;
 }
 
-.addres-list:hover,
-.addres-list:focus {
+.addres-list .style-mail:hover,
+.addres-list .style-mail:focus {
   color: #404bbf;
 }
 
@@ -97,7 +95,6 @@ body {
 .hero-title {
   color: var(--main-bg-color);
   background-color: var(--second-color-text);
-
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -134,6 +131,12 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+.feature-list .title {
+  letter-spacing: 0.02em;
+}
+.team-list .title {
+  letter-spacing: 0.02em;
 }
 
 /* /* features */
@@ -210,13 +213,13 @@ body {
 }
 
 .filters .button {
-  font-family: "Roboto", sans-serif
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--accent-color);
-  background-color: var(--main-bg-color);
+  background-color: var(--second-bg-color);
   cursor: pointer;
 }
 
@@ -231,6 +234,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--second-color-text);
 }
 .work-examples .filter-section {
   font-size: 16px;
