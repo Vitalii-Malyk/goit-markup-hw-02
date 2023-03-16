@@ -28,15 +28,16 @@ body {
 /* logo */
 
 .link,
-.link-logo {
+.logo {
   text-decoration: none;
+  font-style: normal;
 }
-.link-logo .accent {
-  color: var(--accent-color);
-}
-.link-logo {
-  font-family: Raleway, sans-serif;
+.logo .accent {
   color: var(--second-color-text);
+}
+.logo {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -56,35 +57,42 @@ body {
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);
+  color: #404bbf;
 }
 
 /* адресса */
-.style-mail {
-  color: var(--main-color-text);
+
+.addres-list .style-mail {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
+  color: var(--main-color-text);
 }
-.style-tel {
-  color: var(--main-color-text);
+.addres-list .style-tel {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
+  color: var(--main-color-text);
 }
 
-.style-mail:hover,
-.style-mail:focus {
-  color: var(--accent-color);
+
+
+.style-mail .style-tel:hover,
+.style-mail .style-tel:focus {
+  color: #404bbf;
 }
-.style-tel:hover,
-.style-tel:focus {
-  color: var(--accent-color);
+
+.addres-list:hover,
+.addres-list:focus {
+  color: #404bbf;
 }
 
 /*МАЙН*/
 
 /* Герой */
+.hero {
+  background-color: var(--second-color-text);
+}
 
 .hero-title {
   color: var(--main-bg-color);
@@ -99,7 +107,7 @@ body {
 .hero .button {
   font-family: inherit;
   font-weight: 500;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -113,14 +121,13 @@ body {
 
 .hero .button:focus,
 .hero .button:hover {
-  color: #000000;
+  color: #404bbf;
 }
 
 /* Секції */
 
 .section-title {
   color: var(--second-color-text);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -156,7 +163,7 @@ body {
   background-color: var(--main-bg-color);
 }
 
-. .job-title {
+.job-title {
   font-size: 16px;
   line-height: 1.5;
 }
@@ -180,13 +187,17 @@ body {
 
 /* ФУТЕР */
 
-.team-footer {
+.text-footer {
   font-size: 16px;
   line-height: 1.5;
 }
-footer .link-logo {
-  color: #f4f4fd;
+.section-footer .logo {
+  color: var(--accent-color);
 }
+.section-footer .accent {
+  color: var(--second-bg-color);
+}
+
 .text-footer {
   font-weight: 400;
   font-size: 16px;
@@ -199,12 +210,13 @@ footer .link-logo {
 }
 
 .filters .button {
+  font-family: "Roboto", sans-serif
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--accent-color);
-  background-color: #e7e9fc;
+  background-color: var(--main-bg-color);
   cursor: pointer;
 }
 
