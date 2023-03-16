@@ -35,7 +35,7 @@ body {
 .logo .accent {
   color: var(--second-color-text);
 }
-.logo {
+.logo.link {
   font-family: Raleway, sans-serif;
   color: var(--accent-color);
   font-weight: 800;
@@ -119,6 +119,7 @@ body {
 .hero .button:focus,
 .hero .button:hover {
   color: #404bbf;
+  background-color: #404bbf;
 }
 
 /* Секції */
@@ -136,6 +137,9 @@ body {
   letter-spacing: 0.02em;
 }
 .team-list .title {
+  letter-spacing: 0.02em;
+}
+.section .title {
   letter-spacing: 0.02em;
 }
 
